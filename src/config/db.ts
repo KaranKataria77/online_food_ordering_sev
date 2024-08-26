@@ -1,7 +1,6 @@
 import mongoose from "mongoose";
 
-const databaseURL =
-  "mongodb+srv://karankataria771801:7718010801@cluster0.tydt9cl.mongodb.net/restaurant?retryWrites=true&w=majority";
+const databaseURL = process.env.MONGO_URL ?? "";
 
 const setupDB = async () => {
   try {
